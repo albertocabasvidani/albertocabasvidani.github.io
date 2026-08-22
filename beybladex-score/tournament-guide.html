@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournament Guide - Bey Battle Score / Beyblade Score</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #e0e0e0; background: #1a1a2e; line-height: 1.6; }
+    h1 { color: #f5c518; }
+    h2 { color: #f5c518; margin-top: 2em; }
+    h3 { color: #f5c518; font-size: 1.05em; margin-top: 1.5em; }
+    a { color: #64b5f6; }
+    .date { color: #888; font-size: 0.9em; }
+    .lang-nav { margin: 1.5em 0 2.5em; font-size: 0.95em; }
+    ul li, ol li { margin-bottom: 0.5em; }
+    ol li { margin-bottom: 0.9em; }
+    hr { border: none; border-top: 1px solid #3a3a5e; margin: 4em 0 3em; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #3a3a5e; padding: 8px 10px; text-align: left; vertical-align: top; font-size: 0.95em; }
+    th { color: #f5c518; }
+    .step-n { display: inline-block; min-width: 1.6em; height: 1.6em; line-height: 1.6em; text-align: center; background: #f5c518; color: #1a1a2e; border-radius: 50%; font-weight: bold; margin-right: 0.4em; }
+    .example { background: #22223a; border: 1px solid #3a3a5e; border-radius: 8px; padding: 14px 18px; margin: 1em 0; }
+    .faq-q { color: #f5c518; font-weight: 600; margin-top: 1.2em; }
+  </style>
+</head>
+<body>
+
+<h1 id="en">Tournament guide</h1>
+<p class="date"><a href="#it">Versione italiana</a></p>
+
+<h2>1. What you need</h2>
+<p>Just one phone: the one running the app acts as the tournament board. Everyone plays their matches on it, one at a time — no accounts, no other phones or internet connection involved. Before you start, write down (or have ready) the names of every player.</p>
+
+<h2>2. Creating a tournament, step by step</h2>
+<p>From the Home screen, open <strong>Tournaments</strong> and tap <strong>New tournament</strong>. You'll go through six short screens:</p>
+<ol>
+  <li><span class="step-n">1</span><strong>Name</strong> — give the tournament a name, or keep the suggested one (today's date).</li>
+  <li><span class="step-n">2</span><strong>Players</strong> — type each name and confirm, or paste a whole list at once (one name per line). You can add up to 48 players.</li>
+  <li><span class="step-n">3</span><strong>Points format</strong> — choose <strong>Round robin</strong>, <strong>Swiss</strong>, or no points phase at all (straight to a knockout bracket). See the next section if you're not sure which one fits.</li>
+  <li><span class="step-n">4</span><strong>Knockout</strong> — decide whether the tournament ends with a bracket, how many players make the cut, whether matches are single games or a best-of series, and whether to play a 3rd-place match.</li>
+  <li><span class="step-n">5</span><strong>Match rules</strong> — the winning score and foul limit for every match, same options as the regular scoreboard.</li>
+  <li><span class="step-n">6</span><strong>Review</strong> — a plain-language summary of everything you picked. Tap <strong>Create tournament</strong> to start.</li>
+</ol>
+
+<h2>3. Round robin vs. Swiss</h2>
+<p>Both are ways to run a "points phase" before an optional final bracket. Here's the difference with an example of <strong>8 players</strong>:</p>
+<div class="example">
+  <strong>Round robin ("girone all'italiana")</strong> — every player faces every other player, exactly once. With 8 players that's 7 rounds and 28 matches in total. It's the fairest format (nobody's ranking depends on who they happened to meet), but it takes the longest — use it for a small group with plenty of time.
+</div>
+<div class="example">
+  <strong>Swiss</strong> — everyone plays the <em>same number of rounds</em> (fewer than round robin), but each round you're paired against someone with a similar score so far — winners against winners, losers against losers. With 8 players the app suggests 3 rounds instead of 7. It scales to large groups (even 48 players) while keeping every round meaningful.
+</div>
+<p>If in doubt: Swiss for anything above a dozen players or when you're short on time, round robin for a small, relaxed group.</p>
+
+<h2>4. Recording results</h2>
+<p>In the <strong>Round</strong> tab, tap any match to open its result sheet. For each player there's a row with <strong>−</strong> / number / <strong>+</strong>: tap + as each point is scored, or tap the number itself to type it directly on the keyboard. The winner is detected automatically the moment a player reaches the winning score — no separate "pick the winner" step. Tap <strong>Confirm result</strong> to save.</p>
+
+<h2>5. The cut and the final bracket</h2>
+<p>Once every round of the points phase is done, the app shows the final standings and a <strong>Start knockout</strong> button. Tap it to see who makes the cut (the top N players, N is what you chose in step 4) and confirm. The bracket is generated automatically — seeded so the strongest players don't meet each other in the first round — and you play it the same way as the points phase: tap a match, enter the score. Winners advance on their own; if you enabled a 3rd-place match, the two semifinal losers play it automatically too. The final standings (including the podium) appear as soon as the last match is confirmed.</p>
+
+<h2>6. FAQ</h2>
+<p class="faq-q">A player has to leave partway through — what now?</p>
+<p>Long-press their name in the <strong>Players</strong> tab and choose <strong>Withdraw</strong>. Matches they already played stay on the record; any of their remaining matches become a walkover win for the opponent.</p>
+
+<p class="faq-q">Two players are tied — how does the app decide who ranks higher?</p>
+<p>It never leaves a tie unresolved. It checks, in order: match points, then Buchholz (Swiss) or a mini table of just the tied players (round robin), then head-to-head result, then score difference, then total points scored, and — if everything above is still equal — entry order. The standings screen shows which of these decided each close call.</p>
+
+<p class="faq-q">How many rounds does Swiss need?</p>
+<p>The app suggests a number based on player count when you create the tournament, but you can change it. As a rule of thumb, more players need more rounds to sort out a clear ranking.</p>
+
+<p class="faq-q">What's a "bye"?</p>
+<p>With an odd number of players, one player has no opponent for a round and automatically gets a win (a "bye") instead. The app spreads byes evenly so nobody gets more than one until everyone's had a turn.</p>
+
+<p class="faq-q">Can I run a tournament with only a bracket, no points phase?</p>
+<p>Yes — pick "no points phase" in step 3, and the tournament goes straight to the knockout bracket you configure in step 4.</p>
+
+<hr>
+
+<h1 id="it">Guida ai tornei</h1>
+<p class="date"><a href="#en">English version</a></p>
+
+<h2>1. Cosa ti serve</h2>
+<p>Basta un telefono: quello su cui gira l'app fa da tabellone del torneo. Tutti giocano le proprie partite lì sopra, una alla volta — nessun account, nessun altro telefono e nessuna connessione internet coinvolti. Prima di iniziare, tieni pronti (o scritti) i nomi di tutti i giocatori.</p>
+
+<h2>2. Creare un torneo, passo per passo</h2>
+<p>Dalla Home apri <strong>Tornei</strong> e tocca <strong>Nuovo torneo</strong>. Ti guiderà attraverso sei schermate brevi:</p>
+<ol>
+  <li><span class="step-n">1</span><strong>Nome</strong> — dai un nome al torneo, o tieni quello suggerito (la data di oggi).</li>
+  <li><span class="step-n">2</span><strong>Giocatori</strong> — scrivi ogni nome e conferma, oppure incolla una lista intera in un colpo solo (un nome per riga). Puoi arrivare fino a 48 giocatori.</li>
+  <li><span class="step-n">3</span><strong>Formato a punti</strong> — scegli <strong>Girone all'italiana</strong>, <strong>Svizzero</strong>, oppure nessuna fase a punti (si va dritti al tabellone). Se non sai quale scegliere, vedi la sezione successiva.</li>
+  <li><span class="step-n">4</span><strong>Eliminatoria</strong> — decidi se il torneo si chiude con un tabellone, quanti giocatori passano il taglio, se le partite sono a gara secca o al meglio di più lanci, e se giocare la finale per il 3° posto.</li>
+  <li><span class="step-n">5</span><strong>Regole partita</strong> — punteggio vittoria e limite falli per ogni partita, le stesse opzioni del segnapunti normale.</li>
+  <li><span class="step-n">6</span><strong>Riepilogo</strong> — un riassunto in linguaggio semplice di tutto quello che hai scelto. Tocca <strong>Crea torneo</strong> per iniziare.</li>
+</ol>
+
+<h2>3. Girone all'italiana vs Svizzero</h2>
+<p>Sono entrambi modi di organizzare una "fase a punti" prima di un eventuale tabellone finale. Ecco la differenza con un esempio da <strong>8 giocatori</strong>:</p>
+<div class="example">
+  <strong>Girone all'italiana</strong> — ogni giocatore affronta tutti gli altri, esattamente una volta. Con 8 giocatori sono 7 turni e 28 partite in totale. È il formato più equo (la classifica di nessuno dipende da chi ha incontrato per caso), ma è anche il più lungo — usalo con un gruppo piccolo e tempo a disposizione.
+</div>
+<div class="example">
+  <strong>Svizzero</strong> — tutti giocano <em>lo stesso numero di turni</em> (meno che nel girone), ma a ogni turno vieni accoppiato con chi ha un punteggio simile al tuo fin lì — vincitori contro vincitori, sconfitti contro sconfitti. Con 8 giocatori l'app suggerisce 3 turni invece di 7. Si adatta bene anche a gruppi grandi (fino a 48 giocatori) mantenendo ogni turno significativo.
+</div>
+<p>Nel dubbio: Svizzero per gruppi sopra la decina di giocatori o quando il tempo è poco, girone all'italiana per un gruppo piccolo e senza fretta.</p>
+
+<h2>4. Registrare i risultati</h2>
+<p>Nella scheda <strong>Turno</strong>, tocca una partita per aprire il foglio del risultato. Per ogni giocatore c'è una riga con <strong>−</strong> / numero / <strong>+</strong>: tocca + a ogni punto segnato, oppure tocca il numero stesso per digitarlo direttamente da tastiera. Il vincitore si riconosce da solo appena un giocatore raggiunge il punteggio vittoria — nessun passaggio separato per "scegliere il vincitore". Tocca <strong>Conferma risultato</strong> per salvare.</p>
+
+<h2>5. Il taglio e il tabellone finale</h2>
+<p>Terminati tutti i turni della fase a punti, l'app mostra la classifica finale e un bottone <strong>Avvia eliminatoria</strong>. Toccalo per vedere chi passa il taglio (i primi N giocatori, N è quello scelto al passo 4) e confermare. Il tabellone si genera da solo — con un seeding che evita che i giocatori più forti si incontrino al primo turno — e si gioca come la fase a punti: tocchi una partita, inserisci il punteggio. I vincitori avanzano da soli; se hai attivato la finale per il 3° posto, i due sconfitti delle semifinali la giocano automaticamente. La classifica finale (podio incluso) compare non appena l'ultima partita viene confermata.</p>
+
+<h2>6. Domande frequenti</h2>
+<p class="faq-q">Un giocatore deve andare via a metà torneo — cosa faccio?</p>
+<p>Tieni premuto sul suo nome nella scheda <strong>Giocatori</strong> e scegli <strong>Ritira</strong>. Le partite già giocate restano nello storico; le sue partite future diventano vittorie a tavolino per l'avversario.</p>
+
+<p class="faq-q">Due giocatori sono pari merito — come decide l'app chi va davanti?</p>
+<p>Non lascia mai un pareggio irrisolto. Controlla, in ordine: i punti in classifica, poi il Buchholz (Svizzero) o una mini-classifica dei soli giocatori pari merito (girone), poi lo scontro diretto, poi la differenza punti, poi il totale dei punti segnati e — se anche questi sono uguali — l'ordine di iscrizione. La schermata della classifica mostra quale di questi criteri ha deciso ogni caso in bilico.</p>
+
+<p class="faq-q">Quanti turni servono nello Svizzero?</p>
+<p>L'app suggerisce un numero in base ai giocatori quando crei il torneo, ma puoi cambiarlo. Come regola pratica: più giocatori ci sono, più turni servono per arrivare a una classifica chiara.</p>
+
+<p class="faq-q">Cos'è un "bye"?</p>
+<p>Con un numero dispari di giocatori, uno resta senza avversario per quel turno e riceve automaticamente una vittoria (un "bye") al suo posto. L'app distribuisce i bye in modo equo: nessuno ne riceve un secondo finché tutti non ne hanno avuto uno.</p>
+
+<p class="faq-q">Posso fare un torneo con solo il tabellone, senza fase a punti?</p>
+<p>Sì — scegli "nessuna fase a punti" al passo 3, e il torneo va dritto al tabellone che configuri al passo 4.</p>
+
+</body>
+</html>
