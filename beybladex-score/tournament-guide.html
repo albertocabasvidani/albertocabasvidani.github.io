@@ -35,9 +35,9 @@
 <p>From the Home screen, open <strong>Tournaments</strong> and tap <strong>New tournament</strong>. You'll go through six short screens:</p>
 <ol>
   <li><span class="step-n">1</span><strong>Name</strong> — give the tournament a name, or keep the suggested one (today's date).</li>
-  <li><span class="step-n">2</span><strong>Players</strong> — type each name and confirm, or paste a whole list at once (one name per line). You can add up to 48 players.</li>
+  <li><span class="step-n">2</span><strong>Players</strong> — type each name and confirm, pick people from your player book with <strong>Pick from player book</strong>, or paste a whole list at once (one name per line). You can add up to 128 players (16 on the free plan). See <a href="#en-book">Player book</a> for how names are saved.</li>
   <li><span class="step-n">3</span><strong>Points format</strong> — choose <strong>Round robin</strong>, <strong>Swiss</strong>, or no points phase at all (straight to a knockout bracket). See the next section if you're not sure which one fits.</li>
-  <li><span class="step-n">4</span><strong>Knockout</strong> — decide whether the tournament ends with a bracket, how many players make the cut, whether matches are single games or a best-of series, and whether to play a 3rd-place match.</li>
+  <li><span class="step-n">4</span><strong>Knockout</strong> — decide whether the tournament ends with a bracket, how many players make the cut (4, 8, 16, 32 or 64, so the bracket has no empty spots), whether matches are single games or a best-of series, and whether to play a 3rd-place match (on by default).</li>
   <li><span class="step-n">5</span><strong>Match rules</strong> — the winning score and foul limit for every match, same options as the regular scoreboard, and whether points-phase matches are single games or best of 3 or 5.</li>
   <li><span class="step-n">6</span><strong>Review</strong> — a plain-language summary of everything you picked. Tap <strong>Create tournament</strong> to start.</li>
 </ol>
@@ -48,7 +48,7 @@
   <strong>Round robin ("girone all'italiana")</strong> — every player faces every other player, exactly once. With 8 players that's 7 rounds and 28 matches in total. It's the fairest format (nobody's ranking depends on who they happened to meet), but it takes the longest — use it for a small group with plenty of time.
 </div>
 <div class="example">
-  <strong>Swiss</strong> — everyone plays the <em>same number of rounds</em> (fewer than round robin), but each round you're paired against someone with a similar score so far — winners against winners, losers against losers. With 8 players the app suggests 3 rounds instead of 7. It scales to large groups (even 48 players) while keeping every round meaningful.
+  <strong>Swiss</strong> — everyone plays the <em>same number of rounds</em> (fewer than round robin), but each round you're paired against someone with a similar score so far — winners against winners, losers against losers. With 8 players the app suggests 3 rounds instead of 7. It scales to large groups (up to 128 players) while keeping every round meaningful. Round robin goes up to 56 players: beyond that the app switches to Swiss.
 </div>
 <p>If in doubt: Swiss for anything above a dozen players or when you're short on time, round robin for a small, relaxed group.</p>
 
@@ -58,15 +58,29 @@
 <p>A match can also be a <strong>best of 3 or 5</strong>: the first player to win 2 (or 3) games takes it. Set it for a whole phase in the wizard, change it mid-tournament from the same chip (the sheet holds both rules), or pick it for a single match: its result sheet shows <strong>1 / 3 / 5</strong> above the score rows until the first game is recorded. In a series you enter one game at a time, and the match row shows the games won (<strong>1–0 · in progress</strong>, then <strong>2–1</strong>). In the standings a series counts as one win, with every game going into games and points scored.</p>
 
 <h2>5. The cut and the final bracket</h2>
-<p>Once every round of the points phase is done, the app takes you straight to the cut: who makes it (the top N players, N is what you chose in step 4) and a button to confirm. Confirming opens the bracket right away — generated automatically and seeded so the strongest players don't meet each other in the first round. You play it the same way as the points phase: tap a match, enter the score. Winners advance on their own; if you enabled a 3rd-place match, the two semifinal losers play it automatically too.</p>
+<p>Once every round of the points phase is done, the app takes you straight to the cut: who makes it (the top N players, where N is 4, 8, 16, 32 or 64 as you chose in step 4) and a button to confirm. Confirming opens the bracket right away — generated automatically and seeded so the strongest players don't meet each other in the first round. You play it the same way as the points phase: tap a match, enter the score. Winners advance on their own; if the 3rd-place match is on, the two semifinal losers play it automatically too. It is on by default, and you can switch it on or off with the toggle at the top of the bracket or in the cut sheet. Switching it off is not possible once its first game has been recorded, and a bracket where a semifinal was decided by a bye can't have one.</p>
+<p>With no points phase, everyone who signed up plays the bracket: if the number of players isn't a power of 2, the top names on the list skip the first round (a bye).</p>
 <p>The final standings freeze the moment you confirm the last match of the final (and of the 3rd-place match, if you're playing one) — but the app doesn't jump there by itself, since that would pull the finished bracket out from under you right after the last point. Tap the <strong>View podium</strong> button that appears instead.</p>
 
-<h2>6. FAQ</h2>
+<h2 id="en-book">6. Player book</h2>
+<p>The names of your tournaments are kept in a <strong>player book</strong>, so at the next tournament you pick them from the list instead of typing them again. It's free, with no limit on names, and stays on your phone.</p>
+<ul>
+  <li><strong>Pick from the book</strong> — in the Players step, tap <strong>Pick from player book</strong>: tap the players to add and confirm. Players already in the tournament are shown as already added, and the list starts with the people who played the most tournaments.</li>
+  <li><strong>Typed names</strong> — a name you type one at a time always joins the book when you create the tournament. If it matches a player already in the book, it links to that player.</li>
+  <li><strong>Pasted lists</strong> — the <strong>Save to player book</strong> switch is on by default. Switch it off for a one-off tournament: the new names play without joining the book (names already in the book stay linked).</li>
+  <li><strong>The book itself</strong> — open <strong>Player book</strong> at the top of the Tournaments list. You can add a player before a tournament, and press and hold a name to rename or delete it. Renaming doesn't change tournaments already played, and deleting removes the player's card but not those tournaments.</li>
+  <li><strong>Player card</strong> — tap a player to see tournaments played, matches won and lost. With Pro it also shows win rate, tournaments won, podiums, best finish, points scored and conceded, head-to-head against other players in the book, and the tournament history. Both phases count; walkovers count, byes don't, and placements come from completed tournaments only.</li>
+</ul>
+
+<h2>7. FAQ</h2>
 <p class="faq-q">A player has to leave partway through — what now?</p>
 <p>Long-press their name in the <strong>Players</strong> tab and choose <strong>Withdraw</strong>. Matches they already played stay on the record; any of their remaining matches become a walkover win for the opponent.</p>
 
 <p class="faq-q">Two players are tied — how does the app decide who ranks higher?</p>
 <p>It never leaves a tie unresolved. It checks, in order: match points, then Buchholz (Swiss) or a mini table of just the tied players (round robin), then head-to-head result, then score difference, then total points scored, and — if everything above is still equal — entry order. The standings screen shows which of these decided each close call.</p>
+
+<p class="faq-q">How many players can a tournament have?</p>
+<p>Up to 128 with Swiss or a bracket only, up to 56 with round robin (that's already 1,540 matches). The free plan allows 16 players per tournament.</p>
 
 <p class="faq-q">How many rounds does Swiss need?</p>
 <p>The app suggests a number based on player count when you create the tournament, but you can change it. As a rule of thumb, more players need more rounds to sort out a clear ranking.</p>
@@ -89,9 +103,9 @@
 <p>Dalla Home apri <strong>Tornei</strong> e tocca <strong>Nuovo torneo</strong>. Ti guiderà attraverso sei schermate brevi:</p>
 <ol>
   <li><span class="step-n">1</span><strong>Nome</strong> — dai un nome al torneo, o tieni quello suggerito (la data di oggi).</li>
-  <li><span class="step-n">2</span><strong>Giocatori</strong> — scrivi ogni nome e conferma, oppure incolla una lista intera in un colpo solo (un nome per riga). Puoi arrivare fino a 48 giocatori.</li>
+  <li><span class="step-n">2</span><strong>Giocatori</strong> — scrivi ogni nome e conferma, scegli i giocatori dalla rubrica con <strong>Scegli dalla rubrica</strong>, oppure incolla una lista intera in un colpo solo (un nome per riga). Puoi arrivare fino a 128 giocatori (16 con il piano gratuito). Come vengono salvati i nomi: vedi <a href="#it-book">Rubrica giocatori</a>.</li>
   <li><span class="step-n">3</span><strong>Formato a punti</strong> — scegli <strong>Girone all'italiana</strong>, <strong>Svizzero</strong>, oppure nessuna fase a punti (si va dritti al tabellone). Se non sai quale scegliere, vedi la sezione successiva.</li>
-  <li><span class="step-n">4</span><strong>Eliminatoria</strong> — decidi se il torneo si chiude con un tabellone, quanti giocatori passano il taglio, se le partite sono a gara secca o al meglio di più lanci, e se giocare la finale per il 3° posto.</li>
+  <li><span class="step-n">4</span><strong>Eliminatoria</strong> — decidi se il torneo si chiude con un tabellone, quanti giocatori passano il taglio (4, 8, 16, 32 o 64, così il tabellone non ha posti vuoti), se le partite sono a gara secca o al meglio di più lanci, e se giocare la finale per il 3° posto (attiva di default).</li>
   <li><span class="step-n">5</span><strong>Regole partita</strong> — punteggio vittoria e limite falli per ogni partita, le stesse opzioni del segnapunti normale, e se le partite della fase a punti sono a gara secca o al meglio di 3 o 5.</li>
   <li><span class="step-n">6</span><strong>Riepilogo</strong> — un riassunto in linguaggio semplice di tutto quello che hai scelto. Tocca <strong>Crea torneo</strong> per iniziare.</li>
 </ol>
@@ -102,7 +116,7 @@
   <strong>Girone all'italiana</strong> — ogni giocatore affronta tutti gli altri, esattamente una volta. Con 8 giocatori sono 7 turni e 28 partite in totale. È il formato più equo (la classifica di nessuno dipende da chi ha incontrato per caso), ma è anche il più lungo — usalo con un gruppo piccolo e tempo a disposizione.
 </div>
 <div class="example">
-  <strong>Svizzero</strong> — tutti giocano <em>lo stesso numero di turni</em> (meno che nel girone), ma a ogni turno vieni accoppiato con chi ha un punteggio simile al tuo fin lì — vincitori contro vincitori, sconfitti contro sconfitti. Con 8 giocatori l'app suggerisce 3 turni invece di 7. Si adatta bene anche a gruppi grandi (fino a 48 giocatori) mantenendo ogni turno significativo.
+  <strong>Svizzero</strong> — tutti giocano <em>lo stesso numero di turni</em> (meno che nel girone), ma a ogni turno vieni accoppiato con chi ha un punteggio simile al tuo fin lì — vincitori contro vincitori, sconfitti contro sconfitti. Con 8 giocatori l'app suggerisce 3 turni invece di 7. Si adatta bene anche a gruppi grandi (fino a 128 giocatori) mantenendo ogni turno significativo. Il girone arriva a 56 giocatori: oltre, l'app ripiega sullo Svizzero.
 </div>
 <p>Nel dubbio: Svizzero per gruppi sopra la decina di giocatori o quando il tempo è poco, girone all'italiana per un gruppo piccolo e senza fretta.</p>
 
@@ -112,15 +126,29 @@
 <p>Una partita può anche essere <strong>al meglio di 3 o 5</strong>: vince chi arriva per primo a 2 (o 3) game. Lo imposti per un'intera fase nel wizard, lo cambi a torneo in corso dallo stesso chip (il foglio contiene entrambe le regole), oppure lo scegli per una singola partita: il suo foglio del risultato mostra <strong>1 / 3 / 5</strong> sopra le righe del punteggio finché non è registrato il primo game. In una serie inserisci un game alla volta, e la riga della partita mostra i game vinti (<strong>1–0 · in corso</strong>, poi <strong>2–1</strong>). In classifica una serie vale una vittoria, e tutti i game entrano nei game e nei punti fatti.</p>
 
 <h2>5. Il taglio e il tabellone finale</h2>
-<p>Terminati tutti i turni della fase a punti, l'app ti porta direttamente al taglio: chi lo passa (i primi N giocatori, N è quello scelto al passo 4) e un bottone per confermare. Confermando si apre subito il tabellone — generato da solo, con un seeding che evita che i giocatori più forti si incontrino al primo turno. Si gioca come la fase a punti: tocchi una partita, inserisci il punteggio. I vincitori avanzano da soli; se hai attivato la finale per il 3° posto, i due sconfitti delle semifinali la giocano automaticamente.</p>
+<p>Terminati tutti i turni della fase a punti, l'app ti porta direttamente al taglio: chi lo passa (i primi N giocatori, con N pari a 4, 8, 16, 32 o 64 come scelto al passo 4) e un bottone per confermare. Confermando si apre subito il tabellone — generato da solo, con un seeding che evita che i giocatori più forti si incontrino al primo turno. Si gioca come la fase a punti: tocchi una partita, inserisci il punteggio. I vincitori avanzano da soli; se la finale per il 3° posto è attiva, i due sconfitti delle semifinali la giocano automaticamente. È attiva di default, e la accendi o spegni con l'interruttore in cima al tabellone o nel foglio del taglio. Spegnerla non è possibile dopo che è stato registrato il suo primo game, e un tabellone con una semifinale decisa da un bye non può averla.</p>
+<p>Senza fase a punti giocano il tabellone tutti gli iscritti: se non sono una potenza di 2, i primi della lista passano il primo turno senza giocare (bye).</p>
 <p>La classifica finale si congela nell'istante in cui confermi l'ultima partita della finale (e della finale 3°/4° posto, se la giochi) — ma l'app non ci salta da sola, perché ti strapperebbe di mano il tabellone appena completato subito dopo l'ultimo punto. Tocca il bottone <strong>Vedi podio</strong> che compare al suo posto.</p>
 
-<h2>6. Domande frequenti</h2>
+<h2 id="it-book">6. Rubrica giocatori</h2>
+<p>I nomi dei tuoi tornei restano in una <strong>rubrica giocatori</strong>: al torneo dopo li scegli dall'elenco invece di riscriverli. È gratuita, senza limite di nomi, e resta sul tuo telefono.</p>
+<ul>
+  <li><strong>Scegliere dalla rubrica</strong> — nel passo Giocatori tocca <strong>Scegli dalla rubrica</strong>: tocca i giocatori da aggiungere e conferma. Quelli già nel torneo risultano già aggiunti, e l'elenco parte da chi ha giocato più tornei.</li>
+  <li><strong>Nomi scritti a mano</strong> — un nome scritto uno alla volta entra sempre in rubrica quando crei il torneo. Se coincide con un giocatore già in rubrica, si collega a lui.</li>
+  <li><strong>Liste incollate</strong> — l'interruttore <strong>Salva in rubrica</strong> è acceso di default. Spegnilo per un torneo una tantum: i nomi nuovi giocano senza entrare in rubrica (quelli già presenti restano collegati).</li>
+  <li><strong>La rubrica</strong> — apri <strong>Rubrica giocatori</strong> in cima all'elenco dei tornei. Puoi aggiungere un giocatore prima di un torneo, e tenere premuto un nome per rinominarlo o eliminarlo. Rinominare non cambia i tornei già giocati, ed eliminare toglie la scheda del giocatore ma non quei tornei.</li>
+  <li><strong>Scheda giocatore</strong> — tocca un giocatore per vedere tornei giocati, partite vinte e perse. Con Pro trovi anche percentuale di vittorie, tornei vinti, podi, miglior piazzamento, punti fatti e subiti, testa a testa contro gli altri giocatori della rubrica e storico dei tornei. Contano entrambe le fasi; le vittorie a tavolino contano, i bye no, e i piazzamenti vengono solo dai tornei conclusi.</li>
+</ul>
+
+<h2>7. Domande frequenti</h2>
 <p class="faq-q">Un giocatore deve andare via a metà torneo — cosa faccio?</p>
 <p>Tieni premuto sul suo nome nella scheda <strong>Giocatori</strong> e scegli <strong>Ritira</strong>. Le partite già giocate restano nello storico; le sue partite future diventano vittorie a tavolino per l'avversario.</p>
 
 <p class="faq-q">Due giocatori sono pari merito — come decide l'app chi va davanti?</p>
 <p>Non lascia mai un pareggio irrisolto. Controlla, in ordine: i punti in classifica, poi il Buchholz (Svizzero) o una mini-classifica dei soli giocatori pari merito (girone), poi lo scontro diretto, poi la differenza punti, poi il totale dei punti segnati e — se anche questi sono uguali — l'ordine di iscrizione. La schermata della classifica mostra quale di questi criteri ha deciso ogni caso in bilico.</p>
+
+<p class="faq-q">Quanti giocatori può avere un torneo?</p>
+<p>Fino a 128 con lo Svizzero o con il solo tabellone, fino a 56 con il girone (che sono già 1.540 partite). Il piano gratuito permette 16 giocatori per torneo.</p>
 
 <p class="faq-q">Quanti turni servono nello Svizzero?</p>
 <p>L'app suggerisce un numero in base ai giocatori quando crei il torneo, ma puoi cambiarlo. Come regola pratica: più giocatori ci sono, più turni servono per arrivare a una classifica chiara.</p>
